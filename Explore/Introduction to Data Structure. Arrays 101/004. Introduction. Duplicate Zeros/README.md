@@ -24,5 +24,5 @@ https://leetcode.com/explore/learn/card/fun-with-arrays/525/inserting-items-into
 
 ### Constraints:
 
-* 1 <= arr.length <= 10^4
+* 1 <= arr.length <= 10<sup>4</sup>
 * 0 <= arr[i] <= 9
