@@ -24,8 +24,8 @@ https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3240/
 
 ### Constraints:
 
-* 1 <= nums.length <= 10^4
-* -10^4 <= nums[i] <= 10^4
+* 1 <= nums.length <= 10<sup>4</sup>
+* -10<sup>4</sup> <= nums[i] <= 10<sup>4</sup>
 * `nums` is sorted in **non-decreasing** order.
 
 **Follow up:** Squaring each element and sorting the new array is very trivial, could you find an `O(n)` solution using a different approach?
