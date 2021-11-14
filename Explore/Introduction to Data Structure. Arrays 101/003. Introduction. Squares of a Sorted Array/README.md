@@ -6,9 +6,9 @@ https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3240/
 
 ### Example 1:
 
->**Input:** nums = [-4,-1,0,3,10]
+>**Input:** `nums = [-4,-1,0,3,10]`
 >
->**Output:** [0,1,9,16,100]
+>**Output:** `[0,1,9,16,100]`
 >
 >**Explanation:**
 >
@@ -18,9 +18,9 @@ https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3240/
 
 ### Example 2:
 
->**Input:** nums = [-7,-3,2,3,11]
+>**Input:** `nums = [-7,-3,2,3,11]`
 >
->**Output:** [4,9,9,49,121]
+>**Output:** `[4,9,9,49,121]`
 
 ### Constraints:
 
