@@ -6,9 +6,9 @@ https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3237/
 
 ### Example 1:
 
->**Input:** nums = [12,345,2,6,7896]
+>**Input:** `nums = [12,345,2,6,7896]`
 >
->**Output:** 2
+>**Output:** `2`
 >
 >**Explanation:**
 >
@@ -26,9 +26,9 @@ https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3237/
 
 ### Example 2:
 
->**Input:** nums = [555,901,482,1771]
+>**Input:** `nums = [555,901,482,1771]`
 >
->**Output:** 1 
+>**Output:** `1`
 >
 >**Explanation:** 
 >
@@ -37,4 +37,4 @@ https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3237/
 ### Constraints:
 
 * 1 <= nums.length <= 500
-* 1 <= nums[i] <= 10^5
+* 1 <= nums[i] <= 10<sup>5</sup>
