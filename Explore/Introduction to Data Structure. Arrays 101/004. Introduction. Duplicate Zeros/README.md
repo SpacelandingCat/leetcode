@@ -2,7 +2,7 @@ https://leetcode.com/explore/learn/card/fun-with-arrays/525/inserting-items-into
 
 ### Condition:
 
->Given a fixed-length integer array <kbd>arr</kbd>, duplicate each occurrence of zero, shifting the remaining elements to the right.
+>Given a fixed-length integer array `arr`, duplicate each occurrence of zero, shifting the remaining elements to the right.
 >
 >**Note** that elements beyond the length of the original array are not written. Do the above modifications to the input array in place and do not return anything.
 

@@ -2,7 +2,7 @@ https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3238/
 
 ### Condition:
 
->Given a binary array nums, return the maximum number of consecutive 1's in the array.
+>Given a binary array `nums`, return the maximum number of consecutive 1's in the array.
 
 ### Example 1:
 

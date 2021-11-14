@@ -2,7 +2,7 @@ https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3240/
 
 ### Condition:
 
->Given an integer array <kbd>nums</kbd> sorted in **non-decreasing** order, return *an array of **the squares of each number** sorted in non-decreasing order.*
+>Given an integer array `nums` sorted in **non-decreasing** order, return *an array of **the squares of each number** sorted in non-decreasing order.*
 
 ### Example 1:
 
@@ -26,6 +26,6 @@ https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3240/
 
 * 1 <= nums.length <= 10^4
 * -10^4 <= nums[i] <= 10^4
-* <kbd>nums</kbd> is sorted in **non-decreasing** order.
+* `nums` is sorted in **non-decreasing** order.
 
-**Follow up:** Squaring each element and sorting the new array is very trivial, could you find an <kbd>O(n)</kbd> solution using a different approach?
+**Follow up:** Squaring each element and sorting the new array is very trivial, could you find an `O(n)` solution using a different approach?
