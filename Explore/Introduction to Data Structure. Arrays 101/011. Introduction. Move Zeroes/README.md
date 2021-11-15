@@ -14,7 +14,7 @@ https://leetcode.com/explore/learn/card/fun-with-arrays/511/in-place-operations/
 
 ### Example 2:
 
->**Input:** `Input: nums = [0]`
+>**Input:** `nums = [0]`
 >
 >**Output:** `[0]`
 
