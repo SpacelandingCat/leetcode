@@ -21,10 +21,13 @@ https://leetcode.com/explore/learn/card/linked-list/209/singly-linked-list/1290/
 ### Example 1:
 
 >**Input:** 
->`["MyLinkedList", "addAtHead", "addAtTail", "addAtIndex", "get", "deleteAtIndex", "get"]
-[[], [1], [3], [1, 2], [1], [1], [1]]`
+>
+>`["MyLinkedList", "addAtHead", "addAtTail", "addAtIndex", "get", "deleteAtIndex", "get"]`
+>
+>`[[], [1], [3], [1, 2], [1], [1], [1]]`
 >
 >**Output:** 
+>
 >`[null, null, null, null, 2, null, 3]`
 >
 >**Explanation:** 
