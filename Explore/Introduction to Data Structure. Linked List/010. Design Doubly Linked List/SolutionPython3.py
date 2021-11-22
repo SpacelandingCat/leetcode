@@ -3,6 +3,7 @@ class MyLinkedListNode:
     def __init__(self, val=None):
         self.val = val
         self.next = None
+        self.prev = None
 
 class MyLinkedList:
 
@@ -19,18 +20,8 @@ class MyLinkedList:
             if c.val != None:
                 i += 1
         return i
-    
-    def lookAll(self, ll) -> str:
-        c = ll.head
-        s = ''
-        l = len(self)
-        for i in range(l):
-            s += f'[{i}={c.val}],'
-            c = c.next
-        return s
 
     def get(self, index: int) -> int:
-        # print(f'GET {index} from {self.lookAll(self)}')
         c = self.head
         l = len(self)
         if index < 0 or index > l - 1:
@@ -42,16 +33,14 @@ class MyLinkedList:
         return c.val
 
     def addAtHead(self, val: int) -> None:
-        # print(f'ADD {val} at Head {self.lookAll(self)}')
         cs = self.head
         c = MyLinkedListNode(val)
         if cs != None:
             c.next = cs
+            cs.prev = c
         self.head = c
-        # print(f'{self.lookAll(self)}')
 
     def addAtTail(self, val: int) -> None:
-        # print(f'ADD {val} at Tail {self.lookAll(self)}')
         cn = MyLinkedListNode(val)
         c = self.head
         if c != None:
@@ -61,12 +50,11 @@ class MyLinkedList:
                 c = c.next
                 i += 1
             c.next = cn
+            cn.prev = c
         else:
             self.head = cn
-        # print(f'{self.lookAll(self)}')
 
     def addAtIndex(self, index: int, val: int) -> None:
-        # print(f'ADD {val} at index {index} to {self.lookAll(self)}')
         if index == 0:
             self.addAtHead(val)
         else:
@@ -77,20 +65,16 @@ class MyLinkedList:
                 if index > 0 and index < l:
                     c = MyLinkedListNode(val)
                     cp = self.head
-                    cn = self.head
-                    cn = cn.next
                     i = 1
                     while i < index:
                         cp = cp.next
-                        cn = cn.next
                         i += 1
-                    c.next = cn
+                    c.next = cp.next
+                    c.prev = cp
+                    cp.next.prev = c
                     cp.next = c
-        # print(f'{self.lookAll(self)}')
-            
 
     def deleteAtIndex(self, index: int) -> None:
-        # print(f'DELETE from index {index} from {self.lookAll(self)}')
         if index == 0:
             self.head = self.head.next
         else:
@@ -103,16 +87,12 @@ class MyLinkedList:
             else:
                 if index > 0 and index < l - 1:
                     cp = self.head
-                    cn = self.head
-                    cn = cn.next
-                    cn = cn.next
                     i = 1
                     while i < index:
-                        cn = cn.next
                         cp = cp.next
                         i += 1
-                    cp.next = cn
-        # print(f'{self.lookAll(self)}')
+                    cp.next.next.prev = cp
+                    cp.next = cp.next.next
         
 
 
